@@ -10,8 +10,10 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      tamina.lan.
-@       IN      A       192.168.0.36
+@       IN      A       192.168.1.48
 @       IN      AAAA    ::1
-unify.tamina.lan.       IN      A       192.168.7.48
-proxy.tamina.lan.       IN      A       192.168.7.48
-plex.tamina.lan.       IN      A       192.168.7.48
+gateway       IN      A       192.168.1.48
+unify       IN      CNAME       gateway
+proxy       IN      CNAME       gateway
+plex       IN      CNAME       gateway
+cluster       IN      CNAME       gateway
