@@ -15,5 +15,4 @@ $TTL    604800
 gateway       IN      A       192.168.1.48
 unify       IN      CNAME       gateway
 proxy       IN      CNAME       gateway
-plex       IN      CNAME       gateway
-cluster       IN      CNAME       gateway
+stream       IN      CNAME       gateway
